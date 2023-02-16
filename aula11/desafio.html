@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex009.js">
+    <title>Consultor de Nacionalidade</title>
+</head>
+<body>
+    <h1>Consultor de Nacionalidade</h1>
+    Onde você nasceu? <input type="text" name="lugar" id="lugar">
+    <input type="button" id="verificar" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+
+    <script>
+        
+    function verificar() {
+
+        var lugar = document.getElementById('lugar')
+        var res = document.getElementById('res')
+        var pais = (lugar.value)
+        res.innerHTML = `Sua Nacionalidade é <strong>${pais}</strong>`
+        if( pais == Brasil){
+            res.innerHTML += `Você é <strong>Brasileiro!</strong>`
+        }
+    }
+
+
+    </script>
+</body>
+</html>

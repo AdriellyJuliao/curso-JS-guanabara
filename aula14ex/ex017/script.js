@@ -1,0 +1,1 @@
+alert('Olá, estou mega empolgada para aprender cada vez mais!')
